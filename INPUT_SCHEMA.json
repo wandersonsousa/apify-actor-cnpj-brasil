@@ -1,0 +1,53 @@
+{
+    "title": "Schema For CNPJ Extractor",
+    "description": "",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "date": {
+            "title": "Data para extrair",
+            "type": "string",
+            "description": "YYYY-MM-DD",
+            "editor": "textfield",
+            "default": "2022-09-08",
+            "pattern": "d{4}-d{2}-d{2}"
+        },
+        "stateCode": {
+            "title": "Sigla de estado",
+            "type": "string",
+            "description": "State",
+            "editor": "select",
+            "default": "PI",
+            "enum": [
+                "AC",
+                "AL",
+                "AP",
+                "AM",
+                "BA",
+                "CE",
+                "DF",
+                "ES",
+                "GO",
+                "MA",
+                "MS",
+                "MT",
+                "MG",
+                "PA",
+                "PB",
+                "PR",
+                "PE",
+                "PI",
+                "RJ",
+                "RN",
+                "RS",
+                "RO",
+                "RR",
+                "SC",
+                "SP",
+                "SE",
+                "TO"
+            ]
+        }
+    },
+    "required": []
+}
