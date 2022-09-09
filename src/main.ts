@@ -7,7 +7,7 @@
 // For more information, see https://sdk.apify.com
 import { Actor } from 'apify';
 // For more information, see https://crawlee.dev
-import { PuppeteerCrawler, Dataset, Log } from 'crawlee';
+import { PuppeteerCrawler, Dataset } from 'crawlee';
 import { cnaes } from './config';
 import { SearchAdvancedPage } from './helpers';
 
@@ -32,7 +32,7 @@ async function main() {
         async requestHandler({ page, log }) {
             await Promise.allSettled(
                 cnaes.map(async (cnae) => {
-                    log.error(`Request for cnae ${cnae}`);
+                    log.info(`Request for cnae ${cnae}`);
                     const CNPJ_DATALIST = await SearchAdvancedPage(page, {
                         state: stateCode,
                         date,
