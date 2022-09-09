@@ -8,7 +8,7 @@
     "dependencies": {
         "apify": "^3.0.2",
         "crawlee": "^3.0.4",
-        "puppeteer": "17.1.3"
+        "puppeteer": "*"
     },
     "devDependencies": {
         "@apify/eslint-config-ts": "^0.2.3",
@@ -29,6 +29,6 @@
         "lint:fix": "eslint ./src --ext .ts --fix",
         "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
     },
-    "author": "It's not you it's me",
+    "author": "wandersonsousa",
     "license": "ISC"
 }
